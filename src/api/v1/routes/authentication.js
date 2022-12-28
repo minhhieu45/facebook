@@ -12,7 +12,6 @@ module.exports = (function() {
 		return res.render('login');
 	  
 	});
-    
     router.get('/login', function(req, res){
 	  //Return to page login
 	  res.render('login.ejs');

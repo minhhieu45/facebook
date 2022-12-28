@@ -8,7 +8,7 @@ const config = require('../src/config/config');
 const routes = require('../src/api/v1/routes/authentication');
 const app = express();
 require('dotenv').config();
-
+const logEvents = require('../src/api/v1/helpers/logEvents');
 // Passport session setup. 
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -28,7 +28,6 @@ passport.use(new FacebookStrategy({
   },
   function(accessToken, refreshToken, profile, done) {
     process.nextTick(function () {
-      console.log(accessToken +"\n", refreshToken+"\n", profile+"\n", done);
       return done(null, profile);
     });
   }
@@ -43,5 +42,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', routes);
+app.use((err, req, res, next)=>{
+  logEvents(err.message);
+});
 
 app.listen(3000);
+
+
+
