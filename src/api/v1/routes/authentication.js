@@ -16,17 +16,12 @@ module.exports = (function() {
 	  //Return to page login
 	  res.render('login.ejs');
 	});
-    
-    router.get('/account', ensureAuthenticated, function(req, res){
-	  res.render('account', { user: req.user });
-	});
 
 	router.get('/auth/facebook', passport.authenticate('facebook',{scope: ['email','public_profile']}));
 
 	router.get('/auth/facebook/callback',
 	  passport.authenticate('facebook', { successRedirect : '/', failureRedirect: '/login' }),
 	  function(req, res) {
-        passport.
 	    res.redirect('/');
 	  });
 
