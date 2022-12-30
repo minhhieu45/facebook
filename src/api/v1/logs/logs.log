@@ -43,4 +43,64 @@ D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer
     93|       <li class="list-group-item">Email: <%= user.email %></li>
     94|       <li class="list-group-item">Birthday: <%= user.birthday %></li>
 
-user is not defined
+user is not defined/ --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:54
+    52|               <p class="text-muted" style="margin-bottom:5px"><span>Birthday: </span> <span><%= user.birthday %></span></p>
+    53|               <p class="text-muted" style="margin-bottom:5px"><span>Gender: </span> <span><%= user.gender %></span></p>
+ >> 54|               <p class="text-muted" style="margin-bottom:5px"><span>HomeTown: </span> <span><%= user.hometown.name %></span></p>
+    55|               <p class="text-muted" style="margin-bottom:5px"><span>Location: </span> <span><%= user.location.name %></span></p>
+    56|             </div>
+    57|           </div>
+
+Cannot read properties of undefined (reading 'name')/ --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:54
+    52|               <p class="text-muted" style="margin-bottom:5px"><span>Birthday: </span> <span><%= user.birthday %></span></p>
+    53|               <p class="text-muted" style="margin-bottom:5px"><span>Gender: </span> <span><%= user.gender %></span></p>
+ >> 54|               <p class="text-muted" style="margin-bottom:5px"><span>HomeTown: </span> <span><%= user.hometown.name %></span></p>
+    55|               <p class="text-muted" style="margin-bottom:5px"><span>Location: </span> <span><%= user.location.name %></span></p>
+    56|             </div>
+    57|           </div>
+
+Cannot read properties of undefined (reading 'name')/ --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:54
+    52|               <p class="text-muted" style="margin-bottom:5px"><span>Birthday: </span> <span><%= user.birthday %></span></p>
+    53|               <p class="text-muted" style="margin-bottom:5px"><span>Gender: </span> <span><%= user.gender %></span></p>
+ >> 54|               <p class="text-muted" style="margin-bottom:5px"><span>HomeTown: </span> <span><%= user.hometown.name %></span></p>
+    55|               <p class="text-muted" style="margin-bottom:5px"><span>Location: </span> <span><%= user.location.name %></span></p>
+    56|             </div>
+    57|           </div>
+
+Cannot read properties of undefined (reading 'name')/ --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:54
+    52|               <p class="text-muted" style="margin-bottom:5px"><span>Birthday: </span> <span><%= user.birthday %></span></p>
+    53|               <p class="text-muted" style="margin-bottom:5px"><span>Gender: </span> <span><%= user.gender %></span></p>
+ >> 54|               <p class="text-muted" style="margin-bottom:5px"><span>HomeTown: </span> <span><%= user.hometown.name %></span></p>
+    55|               <p class="text-muted" style="margin-bottom:5px"><span>Location: </span> <span><%= user.location.name %></span></p>
+    56|             </div>
+    57|           </div>
+
+Cannot read properties of undefined (reading 'name')
