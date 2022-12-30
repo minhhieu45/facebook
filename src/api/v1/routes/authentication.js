@@ -14,7 +14,7 @@ module.exports = (function() {
 	});
     router.get('/login', function(req, res){
 	  //Return to page login
-	  res.render('login.ejs');
+	  res.render('login');
 	});
 
 	router.get('/auth/facebook', passport.authenticate('facebook',{scope: ['email','public_profile']}));

@@ -7,8 +7,9 @@ const bodyParser = require('body-parser');
 const config = require('../src/config/config');
 const routes = require('../src/api/v1/routes/authentication');
 const app = express();
-require('dotenv').config();
 const logEvents = require('../src/api/v1/helpers/logEvents');
+const path = require('path');
+require('dotenv').config();
 // Passport session setup. 
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -33,6 +34,7 @@ passport.use(new FacebookStrategy({
   }
 ));
 
+app.use('/assets', express.static("src/api/v1/interfaces/assets"));
 app.set('views', __dirname + '/api/v1/interfaces');
 app.set('view engine', 'ejs'); // sử dụng view ejs
 app.use(cookieParser()); //Parse cookie
@@ -43,7 +45,12 @@ app.use(passport.session());
 
 app.use('/', routes);
 app.use((err, req, res, next)=>{
-  logEvents(err.message);
+  logEvents(`${req.url} --- ${req.method} --- ${err.message}`);
+  res.status(err.status || 500);
+  res.json({
+    status: err.status || 500,
+    message : err.message
+  });
 });
 
 app.listen(3000);

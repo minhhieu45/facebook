@@ -9,11 +9,11 @@
       </div>
       <div class="profile">
         <div class="info">
-          <p>Chào, <b>Minh Hiếu</b></p>
+          <p>Chào, <b><%= user.name %></b></p>
           <small class="text-muted">Admin</small>
         </div>
         <div class="profile-photo">
-          <img src="../interfaces/assets/image/profile-1.jpg">
+          <img src="../assets/image/profile-1.jpg">
         </div>
       </div>
     </div>
@@ -38,44 +38,23 @@
       </div>        
     </div>
     <div class="sales-analytics">
-      <h2>Công cụ hỗ trợ</h2>
-      <div class="item online">
-        <div class="icon">
-          <span class="material-icons">shopping_cart</span>
-        </div>
-        <div class="right">
-          <div class="info">
-            <h3>ONLINE ORDERS</h3>
-            <small class="text-muted">Last 24 Hours</small>
-          </div>
-          <h5 class="success">+39%</h5>
-          <h3>3849</h3>
-        </div>
-      </div>
-      <div class="item offline">
-        <div class="icon">
-          <span class="material-icons">local_mall</span>
-        </div>
-        <div class="right">
-          <div class="info">
-            <h3>OFFLINE ORDERS</h3>
-            <small class="text-muted">Last 24 Hours</small>
-          </div>
-          <h5 class="danger">-17%</h5>
-          <h3>3849</h3>
-        </div>
-      </div>
+      <h2>Thông tin tài khoản</h2>
       <div class="item customers">
         <div class="icon">
           <span class="material-icons">person</span>
         </div>
         <div class="right">
           <div class="info">
-            <h3>NEW CUSTOMERS</h3>
-            <small class="text-muted">Last 24 Hours</small>
+            <h2><%= user.name %></h2>
+            <div class="about-info">
+              <p class="text-muted" style="margin-bottom:5px"><span>ID: </span> <span><%= user.id %></span></p>
+              <p class="text-muted" style="margin-bottom:5px"><span>Email: </span> <span><%= user.email %></span></p>
+              <p class="text-muted" style="margin-bottom:5px"><span>Birthday: </span> <span><%= user.birthday %></span></p>
+              <p class="text-muted" style="margin-bottom:5px"><span>Gender: </span> <span><%= user.gender %></span></p>
+              <p class="text-muted" style="margin-bottom:5px"><span>HomeTown: </span> <span><%= user.hometown.name %></span></p>
+              <p class="text-muted" style="margin-bottom:5px"><span>Location: </span> <span><%= user.location.name %></span></p>
+            </div>
           </div>
-          <h5 class="success">+25%</h5>
-          <h3>849</h3>
         </div>
       </div>
       <!-- <div class="item add-product">
@@ -86,18 +65,8 @@
       </div> -->
     </div>
   </div>
-  <!-- <div class="card" style="width: 18rem;">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">User name: <%= user.name %></li>
-      <li class="list-group-item">ID: <%= user.id %></li>
-      <li class="list-group-item">Email: <%= user.email %></li>
-      <li class="list-group-item">Birthday: <%= user.birthday %></li>
-      <li class="list-group-item">Gender: <%= user.gender %></li>
-      <li class="list-group-item">HomeTown: <%= user.hometown.name %></li>
-      <li class="list-group-item">Location: <%= user.location.name %></li>
-    </ul>
-  </div> -->
 </div>
-<script src="../interfaces/assets/js/index.js"></script>
+<script src="../assets/js/index.js"></script>
 </body>
 </html>
+!

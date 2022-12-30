@@ -1,0 +1,46 @@
+/hello --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:91
+    89|   <!-- <div class="card" style="width: 18rem;">
+    90|     <ul class="list-group list-group-flush">
+ >> 91|       <li class="list-group-item">User name: <%= user.name %></li>
+    92|       <li class="list-group-item">ID: <%= user.id %></li>
+    93|       <li class="list-group-item">Email: <%= user.email %></li>
+    94|       <li class="list-group-item">Birthday: <%= user.birthday %></li>
+
+user is not defined/hello --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:91
+    89|   <!-- <div class="card" style="width: 18rem;">
+    90|     <ul class="list-group list-group-flush">
+ >> 91|       <li class="list-group-item">User name: <%= user.name %></li>
+    92|       <li class="list-group-item">ID: <%= user.id %></li>
+    93|       <li class="list-group-item">Email: <%= user.email %></li>
+    94|       <li class="list-group-item">Birthday: <%= user.birthday %></li>
+
+user is not defined/hello --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\index.ejs:7
+    5| <%-include('dashboard')%>
+    6| <!--include footer-->
+ >> 7| <%-include('include/_footer')%>
+    8| 
+    9| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:91
+    89|   <!-- <div class="card" style="width: 18rem;">
+    90|     <ul class="list-group list-group-flush">
+ >> 91|       <li class="list-group-item">User name: <%= user.name %></li>
+    92|       <li class="list-group-item">ID: <%= user.id %></li>
+    93|       <li class="list-group-item">Email: <%= user.email %></li>
+    94|       <li class="list-group-item">Birthday: <%= user.birthday %></li>
+
+user is not defined

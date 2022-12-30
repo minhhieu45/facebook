@@ -88,6 +88,9 @@ h5{
 small{
     font-size: 0.75rem;
 }
+.about-info{
+    margin-top: 10px;
+}
 .profile-photo{
     width: 2.8rem;
     height: 2.8rem;
@@ -462,6 +465,10 @@ main .recent-orders a{
 }
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
+}
+.right .info{
+    color: var(--color-primary);
+    justify-content: center;
 }
 /*================== MEDIA QUERIES =================*/
 
