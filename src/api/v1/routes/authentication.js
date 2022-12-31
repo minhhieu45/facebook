@@ -4,13 +4,16 @@ const passport = require('passport')
 
 module.exports = (function() {   
 
-    router.get('/', async function(req, res){
+	router.get('/', (req,res)=>{
+		return res.render('index');
+	});
+    router.get('/home', async function(req, res){
 		let user = await req.user;
 		console.log(user);
 		if(user){
-			return res.render('index', { user: user._json });
+			return res.render('home', { user: user._json });
 		}
-		return res.render('login');
+		return res.render('/');
 	  
 	});
     router.get('/login', function(req, res){
@@ -23,7 +26,7 @@ module.exports = (function() {
 	router.get('/auth/facebook/callback',
 	  passport.authenticate('facebook', { successRedirect : '/', failureRedirect: '/login' }),
 	  function(req, res) {
-	    res.redirect('/');
+	    res.redirect('/home');
 	  });
 
 	router.get('/logout', function(req, res){
