@@ -14,7 +14,6 @@ module.exports = (function() {
 			return res.render('home', { user: user._json });
 		}
 		return res.render('/');
-	  
 	});
     router.get('/login', function(req, res){
 	  //Return to page login
@@ -24,7 +23,7 @@ module.exports = (function() {
 	router.get('/auth/facebook', passport.authenticate('facebook',{scope: ['email','public_profile']}));
 
 	router.get('/auth/facebook/callback',
-	  passport.authenticate('facebook', { successRedirect : '/', failureRedirect: '/login' }),
+	  passport.authenticate('facebook', { failureRedirect: '/login' }),
 	  function(req, res) {
 	    res.redirect('/home');
 	  });
