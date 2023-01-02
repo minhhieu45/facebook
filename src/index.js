@@ -39,7 +39,12 @@ app.set('views', __dirname + '/api/v1/interfaces');
 app.set('view engine', 'ejs'); // sử dụng view ejs
 app.use(cookieParser()); //Parse cookie
 app.use(bodyParser.urlencoded({ extended: false })); //Parse body để get data
-app.use(session({ secret: 'qưertyuiopasdfghjklzxcvbnmZAQWSXECDFEKLJKJTKLD', key: 'sessionID', cookie:{maxAge:6000}}));  //Save user login
+app.use(session({
+  secret: 'qưertyuiopasdfghjklzxcvbnmZAQWSXECDFEKLJKJTKLD', 
+  key: 'sessionID', 
+  resave: true,
+  cookie:{maxAge: 15*60*60*1000}
+}));  //Save user login
 app.use(passport.initialize());
 app.use(passport.session());
 
