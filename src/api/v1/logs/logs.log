@@ -103,4 +103,18 @@ D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer
     56|             </div>
     57|           </div>
 
-Cannot read properties of undefined (reading 'name')
+Cannot read properties of undefined (reading 'name')/business --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\TableBusiness.ejs:56
+    54| </div>
+    55| <!--include footer-->
+ >> 56| <%-include('include/_footer')%>
+    57| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer.ejs:12
+    10|           <div class="profile">
+    11|             <div class="info">
+ >> 12|               <p>Chào, <b><%= user.name %></b></p>
+    13|               <small class="text-muted">Admin</small>
+    14|             </div>
+    15|             <div class="profile-photo">
+
+user is not defined/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"

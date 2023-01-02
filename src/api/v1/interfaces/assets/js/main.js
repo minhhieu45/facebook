@@ -68,8 +68,8 @@
         dots: true,
         nav: true,
         navText:[
-            '< class="bi bi-chevron-left"></i>',
-            '< class="bi bi-chevron-right"></i>'
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
         ],
         responsive: {
             0:{

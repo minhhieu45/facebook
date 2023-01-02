@@ -1,68 +1,28 @@
-<div class="right">
-    <div class="top">
-      <button id="menu-btn">
-        <span class="material-icons">menu</span>
-      </button>
-      <div class="theme-toggler">
-        <span class="material-icons active">light_mode</span>
-        <span class="material-icons">dark_mode</span>
-      </div>
-      <div class="profile">
-        <div class="info">
-          <p>Chào, <b><%= user.name %></b></p>
-          <small class="text-muted">Admin</small>
-        </div>
-        <div class="profile-photo">
-          <img src="../assets/image/profile-1.jpg">
-        </div>
-      </div>
-    </div>
-    <div class="recent-updates">
-      <h2>Thống kê</h2>
-      <div class="income">
-        <span class="material-icons">stacked_line_chart</span>
-        <div class="middle">
-          <div class="left">
-            <h3>Doanh thu </h3>
-            <h1>$10,864</h1>
-          </div>
-          <div class="progress">
-            <svg>
-              <circle cx="38" cy="38" r="36"></circle>
-            </svg>
-            <div class="number">
-              <p>44%</p>
-            </div>
-          </div>
-        </div>
-      </div>        
-    </div>
-    <div class="sales-analytics">
-      <h2>Thông tin tài khoản</h2>
-      <div class="item customers">
-        <div class="icon">
-          <span class="material-icons">person</span>
-        </div>
-        <div class="right">
-          <div class="info">
-            <h2><%= user.name %></h2>
-            <div class="about-info">
-              <p class="text-muted" style="margin-bottom:5px"><span>ID: </span> <span><%= user.id %></span></p>
-              <p class="text-muted" style="margin-bottom:5px"><span>Email: </span> <span><%= user.email %></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="item add-product">
-        <div>
-          <span class="material-icons">add</span>
-          <h3>Add Product</h3>
-        </div>
-      </div> -->
-    </div>
-  </div>
 </div>
-<script src="../assets/js/index.js"></script>
+<script>
+    // Menu Toggle
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+
+    toggle.onclick = function(){
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+
+    // Add hovered class in selected list item
+    let list = document.querySelectorAll('.navigation li');
+    function activeLink(){
+        list.forEach((item)=>{
+            item.classList.remove('hovered')
+        });
+        this.classList.add('hovered');
+    }
+    list.forEach((item)=>{
+        item.addEventListener('mouseover', activeLink);
+    });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-!

@@ -1,71 +1,195 @@
-<main>
-  <h1>Bảng điều khiển</h1>
-  <div class="date">
-    <input type="date" />
+<!-- Main-->
+<div class="main">
+  <div class="topbar">
+      <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      <!-- Search -->
+      <div class="search">
+          <label>
+              <input type="text" placeholder="Search here">
+              <ion-icon name="search-outline"></ion-icon>
+          </label>
+      </div>
+      <!-- User-->
+      <div class="user">
+          <img src="./assets/image/admin.jpg" alt="">
+      </div>
+      
   </div>
-  <div class="insights">
-    <h2>Doanh nghiệp</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Tên doanh nghiệp</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>93949959</td>
-          <td>Võ Minh Hiếu</td>
-        </tr>
-        <tr>
-          <td>93949959</td>
-          <td>Võ Minh Hiếu</td>
-        </tr>
-        <tr>
-          <td>93949959</td>
-          <td>Võ Minh Hiếu</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="#">Show All</a>
+  <!-- Card -->
+  <div class="cardBox">
+      <div class="card">
+          <div>
+              <div class="numbers">1,504</div>
+              <div class="cardName">Daily Views</div>
+          </div>
+          <div class="iconBx">
+              <ion-icon name="eye-outline"></ion-icon>
+          </div>
+      </div>
+      <div class="card">
+          <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+          </div>
+          <div class="iconBx">
+              <ion-icon name="cart-outline"></ion-icon>
+          </div>
+      </div>
+      <div class="card">
+          <div>
+              <div class="numbers">284</div>
+              <div class="cardName">Comment</div>
+          </div>
+          <div class="iconBx">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+          </div>
+      </div>
+      <div class="card">
+          <div>
+              <div class="numbers">1,504</div>
+              <div class="cardName">Earning</div>
+          </div>
+          <div class="iconBx">
+              <ion-icon name="cash-outline"></ion-icon>
+          </div>
+      </div>
   </div>
-  <!------------------- END OF INSIGHTS ---------------->
-  <div class="recent-orders">
-    <h2>Tài khoản quảng cáo</h2>
-    <table>
-      <thead>
-        <tr>
-          <td>ID</td>
-          <th>Tên tài khoản</th>
-          <th>Số dư</th>
-          <th>Tiền tệ</th>
-          <th>Trạng thái</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>93493</td>
-          <td>Võ Minh Hiếu</td>
-          <td>4646454</td>
-          <td>USD-TS</td>
-          <td class="warning">Pending</td>
-        </tr>
-        <tr>
-          <td>93493</td>
-          <td>Võ Minh Hiếu</td>
-          <td>4646454</td>
-          <td>USD-TS</td>
-          <td class="danger">Danger</td>
-        </tr>
-        <tr>
-          <td>93493</td>
-          <td>Võ Minh Hiếu</td>
-          <td>4646454</td>
-          <td>USD-TS</td>
-          <td class="success">Success</td>
-        </tr>
-      </tbody>
-    </table>
-    <a href="#">Show All</a>
+
+  <!-- Order Details-->
+  <div class="details">
+      <div class="recentOrders">
+          <div class="cardHeader">
+              <h2>Business</h2>
+              <a href="" class="btn">View All</a>
+          </div>
+          <table>
+              <thead>
+                  <tr>
+                      <td>Status</td>
+                      <td>Name</td>
+                      <td>ID</td>
+                      <td>Type</td>
+                      <td>Role</td>
+                      <td>Limit</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><span class="status delivered">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  <tr>
+                      <td><span class="status return">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  <tr>
+                      <td><span class="status delivered">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  <tr>
+                      <td><span class="status return">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  <tr>
+                      <td><span class="status delivered">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  <tr>
+                      <td><span class="status return">Live</span></td>
+                      <td>VOMINHHIEU001</td>
+                      <td>12334456654</td>
+                      <td>BM1</td>
+                      <td>ADMIN</td>
+                      <td>BM330</td>
+                  </tr>
+                  
+                  
+              </tbody>
+          </table>
+      </div>
+
+      <!-- Infomation -->
+      <div class="recentInfo">
+          <div class="cardHeader">
+              <h2>Infomation</h2>
+          </div>
+          <div class="info">
+              <div class="item">
+                  <h4>User Name: </h4>
+                  <span><%= user.name %></span>
+              </div>
+              <div class="item">
+                  <h4>ID: </h4>
+                  <span><%= user.id %></span>
+              </div>
+              <div class="item">
+                  <h4>Email: </h4>
+                  <span><%= user.email %></span>
+              </div>
+              <div class="item">
+                  <h4>Birthday: </h4>
+                  <span>
+                    <% if(user.birthday){ %>
+                        user.birthday
+                      <% } else{ %>  
+                        None
+                     <% } %>
+                  </span>
+              </div>
+              <div class="item">
+                  <h4>Gender: </h4>
+                  <span>
+                    <% if(user.gender ){ %>
+                        user.gender 
+                      <% } else{ %>  
+                        None
+                     <% } %>
+                  </span>
+                  <span>Male</span>
+              </div>
+              <div class="item">
+                  <h4>HomeTown: </h4>
+                  <span>
+                    <% if(user.hometown.name ){ %>
+                        user.hometown.name 
+                      <% } else{ %>  
+                        None
+                     <% } %>
+                  </span>
+              </div>
+              <div class="item">
+                  <h4>Location: </h4>
+                  <span>
+                    <% if(user.location.name){ %>
+                        user.location.name
+                      <% } else{ %>  
+                        None
+                     <% } %>
+                  </span>
+              </div>
+          </div>
+      </div>
   </div>
-</main>
+</div>

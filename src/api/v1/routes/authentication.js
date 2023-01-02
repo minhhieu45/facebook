@@ -3,7 +3,6 @@ const router   = express.Router();
 const passport = require('passport')
 
 module.exports = (function() {   
-
 	router.get('/', (req,res)=>{
 		return res.render('index');
 	});
@@ -14,16 +13,11 @@ module.exports = (function() {
 			return res.render('home', { user: user._json });
 		}
 		return res.render('/');
-	});
-    router.get('/login', function(req, res){
-	  //Return to page login
-	  res.render('login');
-	});
-
+	});   
 	router.get('/auth/facebook', passport.authenticate('facebook',{scope: ['email','public_profile']}));
 
 	router.get('/auth/facebook/callback',
-	  passport.authenticate('facebook', { failureRedirect: '/login' }),
+	  passport.authenticate('facebook', { failureRedirect: '/index' }),
 	  function(req, res) {
 	    res.redirect('/home');
 	  });
@@ -38,5 +32,5 @@ module.exports = (function() {
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login')
+  res.redirect('/index')
 }
