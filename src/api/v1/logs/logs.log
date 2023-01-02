@@ -117,4 +117,20 @@ D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\include\_footer
     14|             </div>
     15|             <div class="profile-photo">
 
-user is not defined/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"
+user is not defined/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"/home --- GET --- Failed to lookup view "/" in views directory "D:\MinhHieuDEV\SourceCode\Website\Facebook\src/api/v1/interfaces"/home --- GET --- D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\home.ejs:5
+    3| <%-include('include/_header')%>
+    4| <!--include dashboard-->
+ >> 5| <%-include('dashboard')%>
+    6| <!--include footer-->
+    7| <%-include('include/_footer')%>
+    8| 
+
+D:\MinhHieuDEV\SourceCode\Website\Facebook\src\api\v1\interfaces\dashboard.ejs:175
+    173|                   <h4>HomeTown: </h4>
+    174|                   <span>
+ >> 175|                     <% if(user.hometown.name ){ %>
+    176|                         user.hometown.name 
+    177|                       <% } else{ %>  
+    178|                         None
+
+Cannot read properties of undefined (reading 'name')
