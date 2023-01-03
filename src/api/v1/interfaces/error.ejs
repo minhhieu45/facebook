@@ -422,7 +422,7 @@
               Uh oh! Looks like you got lost. <br />Go back to the homepage if
               you dare!
             </p>
-            <button>i dare!</button>
+            <button class="btn-back">i dare!</button>
           </article>
         </div>
       </div>
@@ -434,6 +434,10 @@
     <script>
       var scene = document.getElementById("scene");
       var parallax = new Parallax(scene);
+      let btnBack = document.querySelector('.btn-back');
+      btnBack.onclick = ()=>{
+        window.location = 'https://www.echeck.digital/';
+      }
     </script>
   </body>
 </html>

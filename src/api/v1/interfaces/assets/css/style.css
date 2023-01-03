@@ -267,7 +267,7 @@ body{
 }
 .btn{
     position: relative;
-    padding: 5px 10px;
+    padding: 10px;
     background: linear-gradient(
         to bottom right,
         var(--blue),
@@ -275,7 +275,7 @@ body{
     );
     text-decoration: none;
     color: var(--white);
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .details table{
     width: 100%;
